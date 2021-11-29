@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="bt btn-default heading">Family Member Recognizer</h3>
+       <br><br>
+       <p>Model is trained to identify people</p>
+       <h5 class="btn btn-info heading">Daddy</h5>
+       <hr>
+       <h5 class="btn btn-info heading">Mommy</h5>
+        <hr>
+        <h5 class="btn btn-info heading">Older Sister</h5>
+          <hr>
+          <h5 class="btn btn-info heading">Younger Sister</h5>
+            <hr>
+        <label>Webcam View - </label>
+        <div id= "camera"></div>
+        <br>
+        <div id = "result"></div>
+
+        <br>
+        <button class="btn btn-succes" onclick="take_snapshot()">Capture Picture</button>
+      <br>
+      <br>
+      <button class="btn btn-primary" onclick="check()">identify The picture</button>
+       <p>Member:<span id = "member"></span> </p>
+</center>
+</div>
+
+     <script src="main.js"></script>
+     </body>
+     </html>
+      
+       
+
+    
+
